@@ -17,7 +17,7 @@ module load hpcx-openmpi/2.9 netcdf4/4.9.1
 #====== Setup (change these as required)
 GROUP=shuttle-pilot20
 FORCING_TYPE=insitu
-INPUT_DIR=/perm/pad/fluxnet-shuttle-ecland/
+INPUT_DIR=/perm/pad/ifs-landbench/
 OUTPUT_DIR=/perm/${USER}/${GROUP}/
 WORK_DIR=/scratch/${USER}/work_${GROUP}/
 NLOOP=2
@@ -36,7 +36,7 @@ ecland-run-experiment -g ${GROUP}\
                       -i ${INPUT_DIR}\
                       -o ${OUTPUT_DIR}\
                       -l ${NLOOP}\
-                      -n "/perm/pad/fluxnet-shuttle-ecland/namelists/${NAMELIST_FILE}"\
+                      -n "/perm/pad/ifs-landbench/namelists/${NAMELIST_FILE}"\
                       -x ${eclandExe}\
                       -w ${WORK_DIR}
                       #-s "CL-002_1997010100-2014123100"\

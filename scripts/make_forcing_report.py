@@ -135,7 +135,7 @@ tp = doc.add_heading("Meteorological Forcing for ecLand from the FLUXNET Shuttle
 for run in tp.runs:
     run.font.color.rgb = RGBColor(0x1F, 0x3B, 0x57)
 para(f"Procedure and quality-control summary · site group “{GROUP}” · {date.today().isoformat()}", italic=True)
-para("Code: fluxnet-shuttle-ecland (github.com/gpbalsamo/fluxnet-shuttle-ecland). Built on the ECMWF "
+para("Code: ifs-landbench (github.com/gpbalsamo/ifs-landbench). Built on the ECMWF "
      "HPC. Every number in this document is read straight from the files that were produced, not "
      "typed in by hand.", size=9.5)
 

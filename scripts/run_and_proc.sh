@@ -12,7 +12,7 @@ EXPERIMENT_NAME="${EXPERIMENT_NAME:-ecland}"
 LBATCH=true ./ecland_run_experiment.sh -g "${GROUP}" -t insitu -x /perm/${USER}/ecland/build/bin/ecland-master-dp
 
 python3 postproc.py \
-  --inputdir /perm/${USER}/fluxnet-shuttle-ecland/output \
-  --outdir /perm/${USER}/fluxnet-shuttle-ecland/postprocessed \
+  --inputdir /perm/${USER}/ifs-landbench/output \
+  --outdir /perm/${USER}/ifs-landbench/postprocessed \
   --experiment-name "${EXPERIMENT_NAME}" \
   --overwrite

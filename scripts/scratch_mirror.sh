@@ -30,9 +30,9 @@
 # the tree they are run from. The intended cycle is
 #
 #   scripts/scratch_mirror.sh push -g shuttle-all775-era5
-#   cd $SCRATCH/fluxnet-shuttle-ecland
+#   cd $SCRATCH/ifs-landbench
 #   scripts/submit_ecland_slurm.sh -g shuttle-all775-era5 -i \
-#     -x $SCRATCH/fluxnet-shuttle-ecland/ecland-build/bin/ecland-master-dp
+#     -x $SCRATCH/ifs-landbench/ecland-build/bin/ecland-master-dp
 #   python3 scripts/postproc.py --inputdir output --outdir postprocessed
 #   python3 scripts/benchmark.py
 #   cd -; scripts/scratch_mirror.sh pull

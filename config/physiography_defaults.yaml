@@ -84,7 +84,7 @@ forcing_sources:
     forcing_hour: "00:00:00"
     forcing_common_name: "forcing_ea_1_oper_1"
 
-  # Added for fluxnet-shuttle-ecland: O1280 (~9 km) static physiography, but
+  # Added for ifs-landbench: O1280 (~9 km) static physiography, but
   # the initial-conditions analysis still from ERA5.
   #
   # RESOL/GTYPE do two separate jobs. They pick which read-only climate
@@ -345,7 +345,7 @@ landgram:
 # SLURM
 #
 # qos `nf` is the serial/fractional QoS, and is what both plumber2-ecland and
-# fluxnet-shuttle-ecland submit with. Available to this account: nf ng dg ni np.
+# ifs-landbench submit with. Available to this account: nf ng dg ni np.
 # ---------------------------------------------------------------------------
 slurm:
   qos: "nf"
